@@ -66,7 +66,7 @@ Create a `.env` file and add your Google API key:
    streamlit run app.py
    ```
 
-## 🔐 Deploying on a Cloud Platform 🔐
+## 🔐 Deploy on Cloud Platform 🔐
 
 To deploy on services like AWS, ensure you have the necessary setup for Python and any environment variables configured in the hosting environment.
 
