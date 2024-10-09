@@ -1,11 +1,11 @@
 # Chat-With-PDF using Streamlit and Langchain
 
-## 👀 Project Overview
+## 👀 Project Overview 👀
 This project is a PDF chatbot application built using Streamlit, LangChain, and multiple LLMs (Large Language Models) both local and API-driven. 
 Users can upload PDF documents and engage in a conversational interface that leverages advanced language models such as Google Gemini and Ollama (Llama 3.2). 
 The application is designed for flexibility and scalability, enabling the processing of multiple document types and providing intelligent responses based on document content.
 
-## 🧠 Project Structure
+## 🧠 Project Structure 🧠
 
 > `chatpdf/`:
 
@@ -13,7 +13,7 @@ The application is designed for flexibility and scalability, enabling the proces
 - **requirements.txt:** Lists the Python packages required to run the application.
 - **.env:** Stores environment variables such as API keys (not included in version control).
 
-## 📦 Technology Stack
+## 📦 Technology Stack 📦
 
 - **Streamlit:** A fast way to create web applications for machine learning and data science projects.
 - **LangChain:** Provides a framework to work with LLMs for document processing and conversational tasks.
@@ -23,7 +23,7 @@ The application is designed for flexibility and scalability, enabling the proces
 - **PyPDF2:** Library for extracting text from PDF files.
 - **AWS Deployment:** AWS services are leveraged for hosting and deploying the application.
 
-## ⚒ Key Code Components
+## ⚒ Key Code Components ⚒
 
 - **get_pdf_text(pdf_docs):** Extracts text from uploaded PDF files.
 - **get_text_chunks(text):** Splits extracted text into manageable chunks for processing.
@@ -32,7 +32,7 @@ The application is designed for flexibility and scalability, enabling the proces
 - **ollama_input(user_question, docs):** Handles user questions using the Ollama model.
 - **user_input(user_question, chat_history, model_choice):** Processes user input and retrieves relevant document context to generate answers.
 
-## 🛠 Running the Project Locally
+## 🛠 Running the Project Locally 🛠
 
 1. Clone the repo:
    ```bash
@@ -66,15 +66,16 @@ Create a `.env` file and add your Google API key:
    streamlit run app.py
    ```
 
-## 🔐 Deploying on a Cloud Platform
+## 🔐 Deploying on a Cloud Platform 🔐
 
 To deploy on services like AWS, ensure you have the necessary setup for Python and any environment variables configured in the hosting environment.
 
-## 💡 References
+## 💡 References 💡
 
-- LangChain Documentation
-- Ollama
-- Google Generative AI
-- Streamlit Documentation
+- [LangChain Documentation](https://python.langchain.com/docs/introduction/)
+- [Ollama](https://ollama.com/blog/python-javascript-libraries)
+- [Google Generative AI](https://ai.google.dev/gemini-api/docs/ai-studio-quickstart)
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- [Google Gemini Pro LLM Model Free API](https://www.youtube.com/watch?v=W0rNUAfqGFc)
 
   
