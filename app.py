@@ -76,7 +76,7 @@ def user_input(user_question, chat_history, model_choice):
     new_db = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
     docs = new_db.similarity_search(user_question)
 
-    if model_choice == "llama3.2":
+    if model_choice == "Llama3.2":
         output = ollama_input(user_question, docs)
     else:  # Assume "Gemini"
         if "summarize" in user_question.lower():
@@ -106,7 +106,7 @@ def main():
     st.sidebar.title("Choose a model")
     st.session_state.model_choice = st.sidebar.selectbox(
         "Select a model:",
-        options=["Gemini", "llama3.2"],  # Add your models here
+        options=["Gemini", "Llama3.2"],  # Add your models here
         index=0  # Default index
     )
 
